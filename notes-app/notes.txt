@@ -1,0 +1,10 @@
+1-Segunda linea usando append
+2-Segunda linea usando append
+3-Tercera linea usando append
+4-Cuarta linea usando append
+
+1-Segunda linea usando append
+2-Segunda linea usando append
+3-Tercera linea usando append
+4-Cuarta linea usando append
+
