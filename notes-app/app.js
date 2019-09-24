@@ -1,3 +1,4 @@
-const name = 'Maria'
+const getNotes = require('./notes.js')
+const notes = getNotes()
 
-console.log('name: ',name)
+console.log('notes: ',notes)
