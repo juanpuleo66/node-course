@@ -1,7 +1,7 @@
-const validator = require('validator')
+const chalk = require('chalk')
+console.log(chalk.yellow.bold('Success in green !!!'))
 
-const isEmail = validator.isEmail('nombre.apellido@gmail.com')
-console.log('isEmail: ',isEmail)
-
-const isURL = validator.isURL('https://www.npmjs.com/package/validator',{ protocols: ['http','https','ftp']})
-console.log('isURL: ',isURL)
+const log = console.log
+log(chalk.blue.underline('Hello World in blue !!!'))
+log(chalk.green.inverse('This is a message in purple !!'))
+log(chalk.black.bold.bgWhite.bold('Letras negras con fondo blanco !!!'))
