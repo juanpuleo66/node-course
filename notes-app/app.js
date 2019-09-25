@@ -1,4 +1,7 @@
-const getNotes = require('./notes.js')
-const notes = getNotes()
+const validator = require('validator')
 
-console.log('notes: ',notes)
+const isEmail = validator.isEmail('nombre.apellido@gmail.com')
+console.log('isEmail: ',isEmail)
+
+const isURL = validator.isURL('https://www.npmjs.com/package/validator',{ protocols: ['http','https','ftp']})
+console.log('isURL: ',isURL)
