@@ -10,18 +10,38 @@ yargs.version('1.2.3')
 //Create add command --> node app.js add
 yargs.command({
   command: 'add',
-  describe: 'Add a new note',
-  handler: () => {
-    console.log('Adding a new note')
+  describe: 'Add a new note --help',
+  builder: {
+    title: {
+      describe: 'add.builder.title.describe',
+      demandOption: true,
+      type: 'string'
+    },
+    body: {
+      describe: 'add.body.title.describe',
+      demandOption: true,
+      type: 'string'
+    }
+  },
+  handler: (argv) => {
+    console.log('Title: ' + argv.title)
+    console.log('Body: ' + argv.body)
   }
 })
 
 //Create remove command
 yargs.command({
   command: 'remove',
-  describe: 'Remove a note',
-  handler: () => {
-    console.log('Removing the note')
+  describe: 'Remove a note --help',
+  builder: {
+    title: {
+      describe: 'remove.builder.title.describe',
+      demandOption: true,
+      type: 'boolean'
+    },
+  },
+  handler: (argv) => {
+    console.log('Title: ' + argv.title)
   }
 })
 
@@ -30,7 +50,7 @@ yargs.command({
   command: 'read',
   describe: 'Reads a note',
   handler: () => {
-    console.log('Reading the note')
+    console.log('Reading a note')
   }
 })
 
@@ -39,9 +59,8 @@ yargs.command({
   command: 'list',
   describe: 'List all the notes',
   handler: () => {
-    console.log('Listing the note')
+    console.log('Listing all the notes')
   }
 })
 
-
-console.log(yargs.argv)
+yargs.parse()
