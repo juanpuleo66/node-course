@@ -1,1 +1,27 @@
-{"title":"Ego is the enemy","author":"Ryan Holiday"}
+[
+  {
+    "name": "Maria",
+    "planet": "Tierra",
+    "age": 23
+  },
+  {
+    "name": "Janitza",
+    "planet": "Marte",
+    "age": 52
+  },
+  {
+    "name": "Juan",
+    "planet": "Venus",
+    "age": 53
+  },
+  {
+    "name": "Andrea",
+    "planet": "Pluton",
+    "age": 22
+  },
+  {
+    "name": "Carlos",
+    "planet": "Mercurio",
+    "age": 33
+  }
+]
